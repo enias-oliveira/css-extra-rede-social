@@ -16,36 +16,159 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
+	--font : Helvetica,Arial,sans-serif;
+	--cor-texto : #262626;
   
 }
 
 /*BODY*/
 body{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: var(--font);
+	color: var(--cor-texto);
+	font-size: 16px;
+
 
 }
 
 /*TOPO*/
 header{
+	flex: 1;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0px 2px 5px -4px rgba(0,0,0,0.75);
 	
 }
 
 /*RODAPÉ*/
 footer{
-
+	flex: 1;
+	width: 100%;
+	display: none;
 }
 
 /*PÁGINA INICIAL*/
 main{
+	flex: 1;
+	display: block;
+	width: 935px;
 	
 }
 	main .profile-content{
+		display: flex;
+	}
+		main .profile-photo {
+			margin: 0 2rem;
+		}
+
+		main .profile-photo img {
+			border: 2px solid #dbdbdb;
+			padding: 2px;
+			border-radius: 50%;
+		}
+
+		main .profile-data {
+			display: flex;
+			justify-content: flex-start;
+			margin: .5rem 0;
+		}
+
+		main .profile-data p {
+			margin: 0.5rem 1rem 0.5rem 0;
+		}
+
+		main .profile-data p span {
+			font-weight:bold ;
+		}
+
+		main .profile-info h1 {
+			font-weight: lighter;
+			margin: .75rem 0;
+		}
+
+		main .profile-info h2{
+			margin: 0.25rem 0 0 0;
+			font-style: normal;
+			font-size: 1rem;
+		}
+
+		main .profile-info ul {
+			list-style: none;
+			padding: 0;
+			margin: 0.5rem 0;
+			line-height: 1.5rem;
+		}
+
+		main .profile-info ul p {
+			margin: 0;
+		}
+
+		main .profile-info ul a {
+			text-decoration-line: none;
+			font-weight: bold;
+			color: #00376a;
+		}
+
+	main .highlighted-stories {
 
 	}
+		main .highlighted-stories ul {
+			display: flex;
+			list-style: none;
+			margin: 0 0 0 1.5rem;
+			padding: 0;
+		}
 
-	main .highlighted-stories{
+		main .highlighted-stories [src="img/highlight.jpg"] {
+			width: 77px;
+			height: 77px;
+			border-radius: 77px;
+			border: 2px solid #dbdbdb;
+			
+		}
 
-	}
+		main .highlighted-stories figure {
+			margin: 1.5rem;
+			padding: 0;
+		}
+
+			main .container-plus-sign {
+				position: relative;
+				width: 77px;
+				height: 77px;
+				border-radius: 77px;
+				border: 2px solid #dbdbdb;
+			}
+
+		main .add-new-highlight img {
+			position: absolute;
+  			margin: auto;
+			width: 50%;
+			height: 50%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+		main .highlighted-stories figcaption {
+			text-align: center;
+			margin: 0.50rem 0;
+			font-size: 0.75rem;
+			font-weight: bold;
+		}
+
+
+
 
 	main .profile-posts{
+		display: none;
+		
 
+	}
+
+	main .profile-posts li {
+		display: none;
 	}
